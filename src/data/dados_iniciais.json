@@ -1,0 +1,187 @@
+{
+  "categorias": [
+    {
+      "titulo": "Lançamentos",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Novas gravações",
+        "url": "#"
+      },
+      "videos": [
+        {
+          "titulo": "A Ele a Glória",
+          "url": "https://www.youtube.com/watch?v=wRJ1COqLsEY",
+          "letra": "Porque Dele e por Ele<br>Para Ele são todas as coisas. (2x)<br><br><i>Coro</i>:<br>A Ele a glória! (3x)<br>Pra sempre, amém!<br><br><Quão profundas riquezas,<br>O saber e o conhecer de Deus!<br>Quão insondáveis<br>Seus juízos e Seus caminhos!"
+        },
+        {
+          "titulo": "Poder para salvar",
+          "url": "https://www.youtube.com/watch?v=rnZ2D9HZHCk",
+          "letra": "Todos necessitam de um amor perfeito<br>Perdão e compaixão<br>Todos necessitam de graça e esperança<br>De um Deus que salva"
+        },
+        {
+          "titulo": "Vim para adorar te",
+          "url": "https://www.youtube.com/watch?v=WJkZ_07G4Xo"
+        },
+        {
+          "titulo": "Aclame ao Senhor",
+          "url": "https://www.youtube.com/watch?v=Schabbu8l68"
+        },
+        {
+          "titulo": "Abre Senhor os meus olhos",
+          "url": "https://www.youtube.com/watch?v=zbk4Gr0KzeY"
+        },
+        {
+          "titulo": "Cante Aleluia",
+          "url": "https://www.youtube.com/watch?v=MRBJL4DN3so"
+        },
+        {
+          "titulo": "Reina em mim",
+          "url": "https://www.youtube.com/watch?v=Dzg1UC9Sl6M"
+        },
+        {
+          "titulo": "Grato, grato, meu Senhor",
+          "url": "https://www.youtube.com/watch?v=qynGgkwDfMQ"
+        }        
+      ]
+    },
+    {
+      "titulo": "Clássicos",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Hinos históricos",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "A Razão de Viver",
+          "url": "https://www.youtube.com/watch?v=OHU4U61MNvo"
+        },
+        {
+          "titulo": "Plena Paz",
+          "url": "https://www.youtube.com/watch?v=mQcNNp2T5ag"
+        },
+        {
+          "titulo": "Eu invoco o Senhor",
+          "url": "https://www.youtube.com/watch?v=_QULNaWzUfc"
+        },
+        {
+          "titulo": "Celebrai com Júbilo ao Senhor",
+          "url": "https://www.youtube.com/watch?v=HC1VdBHfBqQ"
+        }, 
+        {
+          "titulo": "Montanhas e vales",
+          "url": "https://www.youtube.com/watch?v=pNHNlYjNaxw"
+        }
+      ]
+    },
+    {
+      "titulo": "Data Science e Inteligência Artificial",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        },
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "Melhor forma de aprender Python",
+          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
