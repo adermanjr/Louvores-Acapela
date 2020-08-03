@@ -1,21 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Logo from '../../assets/img/logo_louvotes_1.png'
+import { Link } from 'react-router-dom';
+import Logo from '../../assets/img/logo_louvotes_1.png';
 
 import './Menu.css';
 
 function Menu() {
-    return (
-        <nav className="Menu">
-            <Link to="/">
-                <img className="Logo" src={Logo} alt="Louvores Acapela em Português"/>
-            </Link>
-            <Link className="ButtonLink" to="/cadastro/video" >
-                Novo vídeo
-            </Link>
-                
-        </nav>
-    );
+  return (
+    <nav className="Menu">
+      <Link to="/">
+        <img className="Logo" src={Logo} alt="Louvores Acapela em Português" />
+      </Link>
+      <Link className="ButtonLink" to="/cadastro/video">
+        Novo vídeo
+      </Link>
+
+    </nav>
+  );
 }
 
 export default Menu;
