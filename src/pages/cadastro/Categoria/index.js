@@ -28,7 +28,7 @@ function CadastroCategoria() {
         * vercel -> roda scprit build
         * heroku -> roda scprit server
     */
-    const URL = window.location.href.includes('localhost') ? 'http://localhost:8080/categorias' : '';
+    const URL = window.location.href.includes('localhost') ? 'http://localhost:8080/categorias' : 'https://louvores-db.herokuapp.com/categorias';
 
     fetch(URL)
       .then(async (respostaDoServer) => {
