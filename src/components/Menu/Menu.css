@@ -3,13 +3,13 @@
   }
   @media (max-width: 800px) {
     .Logo {
-      max-width: 80px;
+      max-width: 75px;
     }
   }
   
   .Menu {
     width: 100%;
-    height: 94px;
+    height: 95px;
     z-index: 100;
   
     display: flex;
@@ -27,16 +27,16 @@
     border-bottom: 2px solid var(--primary);
   }
   body {
-    --bodyPaddingTop: 94px;
+    --bodyPaddingTop: 95px;
     padding-top: var(--bodyPaddingTop);
   }
   @media (max-width: 800px) {
     .Menu {
-      height: 60px;
+      height: 70px;
       justify-content: center;
     }
     body {
-      --bodyPaddingTop: 40px;
+      --bodyPaddingTop: 70px;
       padding-top: var(--bodyPaddingTop);
     }
   }
@@ -62,7 +62,10 @@
   }
   
   @media (max-width: 800px) {
+    .ButtonLink { display:none;}
+
     a.ButtonLink {
+      display:none;
       position: fixed;
       left: 0;
       right: 0;

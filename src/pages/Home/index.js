@@ -16,7 +16,7 @@ import videosRepository from '../../repositories/videos';
 function Home() {
   const [categXVideos, setCategXVideos] = useState([]);
   const jsonVideo = {
-    titulo: 'A Ele a Glória', url: 'https://www.youtube.com/watch?v=wRJ1COqLsEY', letra: 'Porque Dele e por Ele<br>Para Ele são todas as coisas. (2x)<br><br><i>Coro</i>:<br>A Ele a glória! (3x)<br>Pra sempre, amém!<br><br><Quão profundas riquezas,<br>O saber e o conhecer de Deus!<br>Quão insondáveis<br>Seus juízos e Seus caminhos!',
+    titulo: 'Cante Aleluia', url: 'https://www.youtube.com/watch?v=MRBJL4DN3so', letra: '',
   };
   const {
     videoBanner, setVideo, autoPlay, setAuto,
@@ -59,9 +59,8 @@ function Home() {
             videoDescription={videoBanner.letra}
             autoPlay={autoPlay}
           />
-
+          {/* ignoreFirstVideo */}
           <Carousel
-            ignoreFirstVideo
             category={categXVideos[0]}
             onClick={handleChangeBanner}
           />
