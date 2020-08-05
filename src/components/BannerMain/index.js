@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
@@ -14,11 +16,19 @@ export default function BannerMain({
   videoTitle,
   videoDescription,
   url,
+  autoPlay,
 }) {
   const youTubeID = getYouTubeId(url);
-  const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  // const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
+    <VideoIframeResponsive
+      youtubeID={youTubeID}
+      autoPlay={autoPlay}
+    />
+  );
+
+  /*
     <BannerMainContainer backgroundImage={bgUrl}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
@@ -41,5 +51,5 @@ export default function BannerMain({
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>
-  );
+    */
 }

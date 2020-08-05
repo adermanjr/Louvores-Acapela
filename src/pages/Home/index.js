@@ -1,21 +1,79 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useState, useEffect } from 'react';
 import Menu from '../../components/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
+import PageDefault from '../../components/PageDefault';
+import useBannerChange from '../../hooks/useBannerChange';
+import categoriasRepository from '../../repositories/categorias';
+import videosRepository from '../../repositories/videos';
 
+/*
+    package.json:
+      * vercel -> roda scprit build
+      * heroku -> roda scprit server
+*/
 function Home() {
+  const [categXVideos, setCategXVideos] = useState([]);
+  const jsonVideo = {
+    titulo: 'A Ele a Glória', url: 'https://www.youtube.com/watch?v=wRJ1COqLsEY', letra: 'Porque Dele e por Ele<br>Para Ele são todas as coisas. (2x)<br><br><i>Coro</i>:<br>A Ele a glória! (3x)<br>Pra sempre, amém!<br><br><Quão profundas riquezas,<br>O saber e o conhecer de Deus!<br>Quão insondáveis<br>Seus juízos e Seus caminhos!',
+  };
+  const {
+    videoBanner, setVideo, autoPlay, setAuto,
+  } = useBannerChange(jsonVideo);
+
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        setCategXVideos(categoriasComVideos);
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
+  }, []);
+
+  async function handleChangeBanner(videoId) {
+    setAuto('1');
+
+    await videosRepository.getById(videoId)
+      .then((video) => {
+        console.log(video.titulo);
+        setVideo(video);
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
+  }
+
   return (
-    <div style={{ background: '#141414' }}>
+    <PageDefault paddingAll={0}>
       <Menu />
+      {categXVideos.length === 0 && (<div>Loading...</div>)}
+      {/* JSON.stringify(categXVideos) */}
 
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={dadosIniciais.categorias[0].videos[0].letra}
-      />
+      {categXVideos.length > 0 && (
+        <>
+          <BannerMain
+            videoTitle={videoBanner.titulo}
+            url={videoBanner.url}
+            videoDescription={videoBanner.letra}
+            autoPlay={autoPlay}
+          />
 
+          <Carousel
+            ignoreFirstVideo
+            category={categXVideos[0]}
+            onClick={handleChangeBanner}
+          />
+
+          <Carousel
+            category={categXVideos[1]}
+            onClick={handleChangeBanner}
+          />
+        </>
+      )}
+
+      {/*
       <Carousel
         ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
@@ -24,9 +82,8 @@ function Home() {
       <Carousel
         category={dadosIniciais.categorias[1]}
       />
-
-      <Footer />
-    </div>
+      */}
+    </PageDefault>
   );
 }
 
